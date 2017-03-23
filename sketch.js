@@ -23,10 +23,10 @@ function draw(){
     x = x + speedx;
     
     //ball changes direction when it hits wall
-    if(x>600 || x<0){
+    if(x + 25 >600 || x - 25 < 0){
         speedx = -speedx;
     }
-     if(y>400 || y<0){
+     if(y + 25 > 400 || y - 25 < 0){
         speedy = -speedy;
     }
 }
